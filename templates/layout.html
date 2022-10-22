@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murat Cengiz</title>
+	<link rel="icon" href="{% static 'img/mc_logo.jpg' %}" type="image/x-icon" />
+	
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% include 'partials/_header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'partials/_footer.html' %}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+</html>

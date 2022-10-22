@@ -1,0 +1,70 @@
+<!doctype html>
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+<!-- main css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+    <!--================ Start Banner Area =================-->
+    
+    
+    <!--================ End Banner Area =================-->
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            
+            <hr>
+
+
+            {% for element in yazi %}
+                <div class="portfolio_details_inner">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="left_img">
+                                <img class="img-fluid" src="{{element.img1}}" alt="" style="max-height:400px; max-width:350px; min-height:400px;">
+                            </div>
+                        </div>
+                        <div class="offset-lg-1 col-lg-5">
+                            <div class="portfolio_right_text mt-30">
+                                <h4 class="">{{ element.on_baslik }}</h4>
+                                <p>
+                                    {{element.baslik}}
+                                </p>
+                                <ul class="list">
+                                    <li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i></li>
+
+                                    <li><span>Completed</span>: {{ element.tarih }}</li> <br><br><br><br>
+                                    <a href="yazilar/{{element.yazi_path}}" class="primary_btn"><span>Okumaya Devam Et</span></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+            {% endfor %}
+
+
+
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+    
+   
+
+{% endblock  %}
+

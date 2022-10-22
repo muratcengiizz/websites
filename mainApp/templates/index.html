@@ -1,0 +1,245 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+<!-- main css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+
+</style>
+{% endblock %}
+
+
+{% block content %}
+
+  <!--================ Start Header Area =================-->
+	
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content" >
+							<h1 class="text-uppercase" >Merhaba &#128075;</h1>
+							<h1 class="text-uppercase" >Ben Murat</h1>
+							<h5 class="" >Okumayı, öğrenmeyi ve araştırmayı seviyorum. Kendimi yapay zeka alanında geliştirmek için çalışmalar yapıyorum.</h5>
+							<div class="d-flex align-items-center">
+								<!--<a class="primary_btn" href="#"><span></span></a>-->
+								<!--<a class="primary_btn tr-bg" href="#"><span></span></a>-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="{% static 'img/banner/home-right.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="{% static 'img/about-us.png' %}" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>Neler Yapıyorum <br>
+							  <br>
+							</h2>
+						<p>
+							22 yaşındayım. Okumayı ve keşfetmeyi çok seviyorum. 
+						</p>
+						<p>
+							Günlerim, hedeflerimi gerçekleştirebilmek için kendimi geliştirmek ile geçiyor. <br>
+							
+						</p>
+						<a class="primary_btn" href="#"><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	================ End About Us Area =================-->
+
+
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>İlgilendiğim Alanlar</h2>
+						<p>
+							Bu zaman kadar; veri bilimi, makine öğrenimi, görüntü işleme, web geliştirme
+							<br> alanlarında kendimi geliştirdim.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s1.png' %}" alt="">
+						<h4>Veri Bilimi</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s2.png' %}" alt="">
+						<h4>Makine Öğrenimi</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s4.png' %}" alt="">
+						<h4>Görüntü işleme</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s3.png' %}" alt="">
+						<h4>Web Geliştirme</h4>
+						<p></p>
+					</div>
+				</div>
+				
+
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>Kullandığım Teknolojiler</h2>
+						<p>
+							Genellikle Python yazılım dilinin framework 'leri üzerinden çalışıyorum.
+							<br> 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/python.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Python</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/django-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Django</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/html-logo.webp' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>HTML</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/linux-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Linux</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/postresql-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>PostreSQL</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/tensorflow-logo2.jpg' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Tensorflow</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/pandas-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Pandas</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/numpy-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+						<h4>Numpy</h4>
+						<p></p>
+					</div>
+				</div>
+				
+
+				
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	
+	
+
+	<!--================ Start Newsletter Area =================-->
+	<section class="newsletter_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">Iletişim Kutusu</h2>
+						<p class="text-white">
+							Benimle iletişime geçmek için tıklayabilirsiniz.
+						</p>
+						<div class="subcribe-form" id="mc_embed_signup">
+							<form target="" novalidate="true" action="{% url 'iletisim' %}" method="get" class="subscription relative">
+								
+								<input type="submit" value="İletişime Geç" class="primary-btn hover d-inline">
+								<div class="info">
+                  
+                </div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	
+
+{% endblock %}
